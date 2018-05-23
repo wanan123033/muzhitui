@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="拇指推代理商收益详解" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="代理商分为:" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:text="C级2980(25个号,120元/个)\nB级12000(120个号,100元/个);\nA级24000(300个号,80元/个);" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="代理商收益制度:"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:text="1、直推用户,会员费全部归您,如果您是代理商，那么您的直接推广的一级用户如果购买会员, 那么无论是年费(298)或终身会员(894)将全额进入到您的账户"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:text="2、您将有推广费的10%的业绩提成,如果您是代理商,您下面所有的用户,不分级别,您都将获得10%的会员费提成,这就等于您什么都不用做,可以坐收10%的返利提成"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:text="3、只有代理商可以推荐代理商,如果您是代理商,如果你推荐好友做代理商,您可以享受25%的代理费返利提成(只有代理商才享受此政策)，同时您将享受推荐代理商下面的发展的会员的6%的提成。"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:text="如果需要了解详细关于代理商制度和申请代理商，可以联系招商经理（宋经理：电话：137-2877-5102）"/>
+    <TextView
+        android:id="@+id/tvApply"
+        android:layout_width="200dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_btn_blue_bg"
+        android:gravity="center"
+        android:text="申请成为代理"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>
+</ScrollView>

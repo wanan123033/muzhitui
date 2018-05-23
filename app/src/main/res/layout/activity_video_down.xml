@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp">
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_border_blue_bg"
+                android:gravity="top"
+                android:hint="请将视频的链接粘贴到这里..."
+                android:inputType="textMultiLine"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#A8A8A8"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@color/gray_white"
+                android:src="@drawable/ic_pageedit_close" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_down"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_btn_blue_bg"
+            android:gravity="center"
+            android:text="去下载 >>"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1、如何复制链接："
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="在短视频APP中选择自己喜欢的视频，将视频的链接复制后粘贴到上面的输入框，点击去下载即可进入下载页面，点击底部的下载按钮即可下载视频。"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:text="特别提示:部分视频要播放后才能下载"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="2、如何下载："
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:text="点击我的下载即可找到下载的视频"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="3、目前支持哪些短视频APP的链接？"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="5dp"
+                android:text="主要支持:火山小视频，秒拍，快手，西瓜，抖音，梨视频，映客，小咖秀，新浪视频，内涵段子，muse，百度视频"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <base.view.DragView
+        android:id="@+id/dragview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#00000000"/>
+</RelativeLayout>
+</ScrollView>

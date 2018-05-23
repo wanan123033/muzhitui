@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_index"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/svEditArticle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_index"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/ivVedio"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY" />
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_play" />
+                <TextView
+                    android:id="@+id/tvVideoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="创始人谈拇指推"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+
+                android:text="新手教程"
+                android:textColor="@color/gray_index"
+                android:textSize="12sp" />
+
+
+            <base.view.MyGridView
+                android:id="@+id/gvVidio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:horizontalSpacing="6dp"
+                android:numColumns="2"
+                android:paddingBottom="5dp"
+                android:paddingLeft="2dp"
+
+                android:paddingRight="2dp"
+                android:paddingTop="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="6dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/red_index"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="疑难解答"
+
+                android:textColor="@color/gray_index"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white" />
+
+          <!--  <base.view.MyListView
+                android:id="@+id/gvVidioText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:divider="@null"
+
+                android:horizontalSpacing="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none"
+
+                android:verticalSpacing="5dp" />-->
+            <base.view.MyExpandaleListView
+                android:id="@+id/gvVidioText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:listSelector="#00000000"
+
+                android:smoothScrollbar="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

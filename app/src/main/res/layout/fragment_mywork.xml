@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slyt"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    app:clickToClose="true">
+
+    <LinearLayout
+        android:id="@+id/llytOpt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tag="Bottom4">
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_mw_edit"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="编辑"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_mw_delete"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="删除"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/ivHead"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_mw" />
+
+        <TextView
+            android:id="@+id/tvMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="7dp"
+            android:text="王小华" />
+
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="70dp"
+            android:singleLine="true"
+            android:text="阅读"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/two" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:singleLine="true"
+            android:text="2016-01-15"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/two" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/grayLine" />
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

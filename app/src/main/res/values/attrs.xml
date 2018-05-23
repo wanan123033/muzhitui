@@ -1,0 +1,131 @@
+<resources>
+    <attr name="src" format="reference" />            <!-- 用于缩放旋转的图标 -->
+    <attr name="editable" format="boolean"/>          <!-- 是否处于可编辑状态 -->
+    <attr name="frameColor" format="color" />         <!-- 边框颜色 -->
+    <attr name="frameWidth" format="dimension" />     <!-- 边框线宽度 -->
+    <attr name="framePadding" format="dimension" />   <!-- 边框与图片的间距 -->
+    <attr name="degree" format="float" />             <!-- 旋转角度 -->
+    <attr name="scale" format="float" />              <!-- 缩放比例 -->
+    <attr name="controlDrawable" format="reference"/> <!-- 控制图标 -->
+    <attr name="controlLocation">                     <!-- 控制图标的位置 -->
+        <enum name="left_top" value="0" />
+        <enum name="right_top" value="1" />
+        <enum name="right_bottom" value="2" />
+        <enum name="left_bottom" value="3" />
+    </attr>
+    <!-- Declare Custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SingleTouchView">
+        <attr name="src"/>            <!-- 用于缩放旋转的图标 -->
+        <attr name="editable" />          <!-- 是否处于可编辑状态 -->
+        <attr name="frameColor" />         <!-- 边框颜色 -->
+        <attr name="frameWidth"  />     <!-- 边框线宽度 -->
+        <attr name="framePadding"   />   <!-- 边框与图片的间距 -->
+        <attr name="degree"   />             <!-- 旋转角度 -->
+        <attr name="scale"  />              <!-- 缩放比例 -->
+        <attr name="controlDrawable"  /> <!-- 控制图标 -->
+        <attr name="controlLocation"/>                     <!-- 控制图标的位置 -->
+    </declare-styleable>
+    <declare-styleable name="MoveView">
+        <attr name="src"/>            <!-- 用于缩放旋转的图标 -->
+        <attr name="editable" />          <!-- 是否处于可编辑状态 -->
+        <attr name="frameColor" />         <!-- 边框颜色 -->
+        <attr name="frameWidth"  />     <!-- 边框线宽度 -->
+        <attr name="framePadding"   />   <!-- 边框与图片的间距 -->
+        <attr name="degree"   />             <!-- 旋转角度 -->
+        <attr name="scale"  />              <!-- 缩放比例 -->
+        <attr name="controlDrawable"  /> <!-- 控制图标 -->
+        <attr name="controlLocation"/>                     <!-- 控制图标的位置 -->
+    </declare-styleable>
+
+    <declare-styleable name="PagerIndicator">
+
+        <attr name="visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+
+        <attr name="shape" format="enum">
+            <enum name="oval" value="0"/>
+            <enum name="rect" value="1"/>
+        </attr>
+
+        <attr name="selected_color" format="color|reference"/>
+        <attr name="unselected_color" format="color|reference"/>
+
+        <attr name="selected_drawable" format="reference"/>
+        <attr name="unselected_drawable" format="reference"/>
+
+        <attr name="selected_width" format="dimension"/>
+        <attr name="selected_height" format="dimension"/>
+
+        <attr name="unselected_width" format="dimension"/>
+        <attr name="unselected_height" format="dimension"/>
+
+        <attr name="padding_left" format="dimension"/>
+        <attr name="padding_right" format="dimension"/>
+        <attr name="padding_top" format="dimension"/>
+        <attr name="padding_bottom" format="dimension"/>
+
+        <attr name="selected_padding_left" format="dimension"/>
+        <attr name="selected_padding_right" format="dimension"/>
+        <attr name="selected_padding_top" format="dimension"/>
+        <attr name="selected_padding_bottom" format="dimension"/>
+
+        <attr name="unselected_padding_left" format="dimension"/>
+        <attr name="unselected_padding_right" format="dimension"/>
+        <attr name="unselected_padding_top" format="dimension"/>
+        <attr name="unselected_padding_bottom" format="dimension"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+    <!--取景框-->
+    <declare-styleable name="ClipImageView">
+        <attr name="civHeight" format="integer"/>
+        <attr name="civWidth" format="integer"/>
+        <attr name="civTipText" format="string"/>
+        <attr name="civTipTextSize" format="dimension"/>
+        <attr name="civMaskColor" format="color"/>
+        <attr name="civClipPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="AllTextView">
+        <attr name="text_length" format="integer"/>
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuHorView">
+        <attr name="image" format="reference" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="video_gps">
+        <attr name="gpsflag" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="enablePullUp"/>
+        <attr name="enablePullDown"/>
+        <attr name="pullBackground"/>
+    </declare-styleable>
+</resources>

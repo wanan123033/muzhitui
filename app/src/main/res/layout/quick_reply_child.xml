@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/MusicName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+
+            android:gravity="center|left"
+
+            android:maxLines="1"
+            android:paddingLeft="40dp"
+            android:text="男"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ivQuickReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_etitartcle_down" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_index"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:lineSpacingExtra="5dp"
+        android:minHeight="120dp"
+        android:padding="10dp"
+        android:text="您当前申请的保单需要129朵鲜花，您目前可用鲜花数量为10朵"
+        android:textColor="@color/gray_orange"
+        android:textSize="13dp"
+        android:visibility="gone" />
+</LinearLayout>

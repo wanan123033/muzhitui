@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/ivAnimate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_mw" />
+
+    <ImageView
+        android:id="@+id/ivAnimateSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_textanimate_select"
+        android:visibility="gone" />
+</FrameLayout>

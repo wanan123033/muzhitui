@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/red_index"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px">
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+                android:paddingRight="70px"
+            android:background="@drawable/bg_artical_copy"
+            android:drawableLeft="@drawable/ic_artical_copy"
+            android:drawablePadding="12dp"
+            android:hint="请复制您的文章链接粘贴到此处"
+            android:paddingLeft="14dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_pageedit_close" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tvMuzhiChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60px"
+        android:background="@drawable/bg_artical_edit"
+        android:gravity="center"
+        android:text="拇指秒变"
+        android:textColor="#fff"
+        android:textSize="30px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_marginTop="52px"
+        android:layerType="software"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shape_dotted_line" />
+
+    <TextView
+        android:id="@+id/tvOperationInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+     android:paddingTop="20px"
+        android:drawablePadding="20px"
+        android:drawableLeft="@mipmap/contact_info"
+        android:gravity="center|right"
+        android:paddingRight="10px"
+        android:layout_marginRight="20dp"
+        android:text="点击查看更多视频"
+        android:textColor="#0d7aff"
+        android:textSize="12sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp">
+    <base.view.X5WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="60px"
+            android:gravity="center"
+            android:text="拇指秒变-基础新手教程"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+</LinearLayout>

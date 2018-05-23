@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">拇指推</string>
+
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    //<string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="city">选择市区</string>
+    <string name="province">选择省市</string>
+
+    <string name="main_customer">意见反馈</string>
+    <string name="clean_private_friend_history">确定删除好友吗</string>
+    <string name="clean_private_chat_history">确定删除聊天记录吗</string>
+    <string name="de_actionbar_myacc">"个人账号"</string>
+    <string name="de_actionbar_sub_group">"群组"</string>
+    <string name="de_actionbar_sub_private">"我的私人会话"</string>
+    <string name="de_actionbar_sub_discussion">"我的讨论组"</string>
+ <!--   <string name="de_actionbar_sub_system">"系统消息"</string>-->
+    <string name="de_actionbar_sub_defult">"聊天"</string>
+    <string name="de_actionbar_set_public">"公众号"</string>
+  <!--  <string name="de_actionbar_system">"系统消息"</string>-->
+    <string name="contact_notification_someone_agree_your_request">%1$s已同意你的好友请求</string>
+    <string name="contact_notification_agree_your_request">对方已同意你的好友请求</string>
+    <string name="de_dialog_item_message_delete">删除消息</string>
+
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+    <string name="srl_keep_pull_up">继续向上拉</string>
+    <string name="srl_keep_pull_down">继续向下拉</string>
+    <string name="srl_release_to_refresh">松开刷新</string>
+</resources>

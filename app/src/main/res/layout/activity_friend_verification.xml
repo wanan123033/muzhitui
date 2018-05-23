@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#E8E8E8"
+              android:scrollbars="none">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="bottom|left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:text="你需要发送验证申请，等对方通过"
+            android:textColor="@color/tprimary"
+            android:textSize="12sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff">
+
+            <EditText
+                android:id="@+id/etFriendVInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:paddingLeft="15dp"
+                android:text="我是 "
+                android:hint="请输入验证信息"
+                android:textColor="@color/plugin_camera_black"
+                android:textSize="12sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivFriendVDeleteName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_cancel_text"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="bottom|left"
+            android:paddingBottom="7dp"
+            android:paddingLeft="15dp"
+            android:text="附加信息"
+            android:textColor="@color/tprimary"
+            android:textSize="12sp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff">
+
+            <EditText
+                android:id="@+id/etFriendVOtherInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:paddingLeft="15dp"
+                android:textColor="@color/plugin_camera_black"
+                android:textSize="12sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivFriendVDeleteInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_cancel_text"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

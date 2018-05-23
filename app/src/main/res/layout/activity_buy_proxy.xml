@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusableInTouchMode="true"
+    tools:context="com.nevermore.muzhitui.BuyProxyActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="114dp"
+                android:background="@drawable/bg_myproxy_repertory">
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="29dp"
+                    android:text="2980元"
+                    android:textColor="#fff"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/tvDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="67dp"
+                    android:text="25个账号*119.2元/账号"
+                    android:textColor="#fff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:text="选择代理级别" />
+
+                <TextView
+                    android:id="@+id/tvProxyLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/bg_buyproxy_et"
+                    android:drawableRight="@drawable/ic_mw_back"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="6dp"
+                    android:text="C级代理" />
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:text="填写推荐人" />
+
+                <EditText
+                    android:id="@+id/etRecommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/bg_buyproxy_et"
+                    android:hint="推荐人ID，如没有可不填"
+                    android:paddingLeft="11dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="44dp"
+                android:text="推荐人只能是代理商，普通会员不可以成为推荐人"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:background="#f2f2f2"
+                android:gravity="center_vertical"
+                android:paddingLeft="44dp"
+                android:text="请填写基础资料"
+                android:textColor="@color/gray" />
+
+
+            <FrameLayout
+                android:id="@+id/flytName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/bg_buyproxy_et"
+                    android:hint="单行输入"
+                    android:paddingLeft="11dp"
+                    android:singleLine="true" />
+            </FrameLayout>
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:text="手机号码" />
+
+                <EditText
+                    android:id="@+id/etTele"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/bg_buyproxy_et"
+                    android:hint="单行输入"
+                    android:paddingLeft="11dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:text="所在的省份" />
+
+                <EditText
+                    android:id="@+id/etProvince"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/bg_buyproxy_et"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="6dp"
+                    android:text="广东" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="44dp"
+                    android:text="所在城市" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="150dp"
+                    android:background="@drawable/bg_buyproxy_et"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="11dp"
+                    android:paddingRight="6dp"
+                    android:text="深圳" />
+            </FrameLayout>
+
+            <CheckBox
+                android:id="@+id/cbAgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_proxyupgrade_agree"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="我已阅读《拇指推代理协议》" />
+
+            <TextView
+                android:id="@+id/tvNowPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_myproxy_upgrade"
+                android:gravity="center"
+                android:text="立即申请"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

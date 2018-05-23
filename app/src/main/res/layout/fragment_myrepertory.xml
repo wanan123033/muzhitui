@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_myproxy_repertory">
+
+        <TextView
+            android:id="@+id/tvOverflower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="剩余库存140张"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvProxyLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="15dp"
+            android:text="您目前级别：A级代理"
+            android:textColor="#fff" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:text="已购买或者尚未购买代理者，都选择点击购买代理再次购买或者新沟"
+        android:textColor="@color/gray"
+        android:textSize="11dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBatchSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/selector_myproxy_upgrade"
+            android:gravity="center"
+            android:text="批量转卖"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvBuyProxy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/selector_myproxy_buy"
+            android:gravity="center"
+            android:text="购买/代理升级"
+            android:textColor="#fff" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_myproxy_sell">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="21dp"
+            android:text="单个销售"
+            android:textColor="@color/gray" />
+
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/bg_batchsell_et"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/tvCopyKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/selector_myproxy_copykey"
+            android:gravity="center"
+            android:text="复制卡密" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="129dp"
+            android:text="1、输入出售单价，单价至少大于200元，小于298元 ;" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="150dp"
+            android:text="2、点击复制卡密，将卡密发送给朋友;" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="171dp"
+            android:text="3、通过卡密购买会员，购买费用将全额到您的账户;" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="192dp"
+            android:text="4、卡密使用者必须是你的下级用户，否则无法使用;" />
+    </RelativeLayout>
+
+</LinearLayout>

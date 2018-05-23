@@ -1,0 +1,5 @@
+<root>
+  <province name="10个" isvip="0"/>
+  <province name="50个" isvip="1"/>
+  <province name="100个" isvip="2"/>
+</root>

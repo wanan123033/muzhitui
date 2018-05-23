@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nevermore.muzhitui.QRMakeActivity">
+
+    <FrameLayout
+        android:id="@+id/flytTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="标题一" />
+
+        <EditText
+            android:id="@+id/etTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="99dp"
+            android:background="@null"
+            android:hint="请输入您的标题" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLine" />
+
+    <FrameLayout
+        android:id="@+id/flytTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="标题二" />
+
+        <EditText
+            android:id="@+id/etTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="99dp"
+            android:background="@null"
+            android:hint="请输入您的标题" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp"
+        android:text="上传二维码" />
+
+    <FrameLayout
+        android:layout_width="213dp"
+        android:layout_height="213dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:background="#ddd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="12dp"
+            android:drawableTop="@drawable/ic_mw_add"
+            android:text="点击上传二维码" />
+
+        <ImageView
+            android:id="@+id/ivQr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvChangeQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:text="更换二维码"
+        android:enabled="false"
+        android:textColor="@drawable/qrmake_text_color" />
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_ppw_buy"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_mw_cloase" />
+
+        <RadioGroup
+            android:id="@+id/rgBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_year"
+                android:button="@null"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rblife"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/buy_life"
+                android:button="@null" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center|right"
+                android:text="会员金额："
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tvMemberPayMoney"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="298元"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center|right"
+                android:text="推荐者ID："
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/tvTuijianId"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="102052"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_kami"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.39"
+                android:gravity="center|right"
+                android:text="卡密："
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/etCard"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@drawable/shape_et_white_bg"
+                android:hint="没有请不要输入"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray" />
+            <TextView
+                android:id="@+id/clip"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/orange"
+                android:paddingLeft="5dp"
+                android:text="点击粘贴"
+
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/buy_enable"
+            android:enabled="true" />
+
+        <CheckBox
+            android:id="@+id/cbAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/buy_read"
+            android:drawablePadding="5dp"
+            android:text="我已阅读并同意《拇指推广告系统购买协议》"
+            android:textColor="@drawable/selector_service_agree"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

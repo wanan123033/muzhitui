@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:textColor="@color/red_index">
+
+
+
+
+        <LinearLayout
+            android:layout_width="600px"
+            android:layout_height="700px"
+            android:layout_marginTop="150px"
+
+            android:background="@drawable/shape_balck_bg"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="120px"
+                android:layout_height="120px"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="40px"
+
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/ivUIQRCodeHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_qq"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_head_black"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvUIQRCodeNameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:text="Simone (ID:148004)"
+                android:textColor="#fff"
+                android:textSize="32px"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20px">
+
+                <TextView
+                    android:id="@+id/tvUIQRCodeInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20px"
+                    android:gravity="center"
+                    android:text="扫一扫上面的二维码， 加为好友"
+                    android:textColor="#fff"
+                    android:textSize="26px"/>
+
+                <ImageView
+                    android:id="@+id/ivUIQRCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tvUIQRCodeInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="60px"
+
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

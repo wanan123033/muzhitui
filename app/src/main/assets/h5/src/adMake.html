@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""/>
+    <title>广告编辑</title>
+    <script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript"
+            src="http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/api.lib.min.js"></script>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        }
+
+
+        @font-face {
+        font-family: 仿宋;
+        src: url('../../pageedt/font/fangsong.TTF');
+        }
+
+        @font-face {
+        font-family: 黑体;
+        src: url('../../pageedt/font/heiti.otf');
+        }
+
+        @font-face {
+        font-family: 棣书;
+        src: url('../../pageedt/font/dishu.TTF');
+        }
+
+        @font-face {
+        font-family: 粗黑;
+        src: url('../../pageedt/font/cuhei.otf');
+        }
+
+        @-webkit-keyframes expand {
+        0% {
+        transform: scale(2, 2)
+        }
+        50% {
+        transform: scale(1, 1)
+        }
+        }
+
+        @-webkit-keyframes narrow {
+        0% {
+        transform: scale(0.5)
+        }
+        50% {
+        transform: scale(0.2)
+        }
+        }
+
+        @-webkit-keyframes fadeIn {
+        0% {
+        opacity: 0;
+        }
+        50% {
+        opacity: 1;
+        }
+        100% {
+        opacity: 0;
+        }
+        }
+
+        @-webkit-keyframes shake-horizontal {
+        0% {
+        transform: translate(-200px, 0);
+        }
+        100% {
+        transform: translate(200px, 0);
+        }
+        }
+
+
+        @-webkit-keyframes shake-vertical {
+        2% {
+        transform: translate(0, -2px) rotate(0deg)
+        }
+        4% {
+        transform: translate(0, 6px) rotate(0deg)
+        }
+        6% {
+        transform: translate(0, -1px) rotate(0deg)
+        }
+        8% {
+        transform: translate(0, -6px) rotate(0deg)
+        }
+        10% {
+        transform: translate(0, -2px) rotate(0deg)
+        }
+        12% {
+        transform: translate(0, 6px) rotate(0deg)
+        }
+        14% {
+        transform: translate(0, 0px) rotate(0deg)
+        }
+        16% {
+        transform: translate(0, 3px) rotate(0deg)
+        }
+        18% {
+        transform: translate(0, -1px) rotate(0deg)
+        }
+        20% {
+        transform: translate(0, 10px) rotate(0deg)
+        }
+        22% {
+        transform: translate(0, 2px) rotate(0deg)
+        }
+        24% {
+        transform: translate(0, 5px) rotate(0deg)
+        }
+        26% {
+        transform: translate(0, 7px) rotate(0deg)
+        }
+        28% {
+        transform: translate(0, 6px) rotate(0deg)
+        }
+        30% {
+        transform: translate(0, 0px) rotate(0deg)
+        }
+        32% {
+        transform: translate(0, -5px) rotate(0deg)
+        }
+        34% {
+        transform: translate(0, -3px) rotate(0deg)
+        }
+        36% {
+        transform: translate(0, 10px) rotate(0deg)
+        }
+        38% {
+        transform: translate(0, 2px) rotate(0deg)
+        }
+        40% {
+        transform: translate(0, -3px) rotate(0deg)
+        }
+        42% {
+        transform: translate(0, -2px) rotate(0deg)
+        }
+        44% {
+        transform: translate(0, -5px) rotate(0deg)
+        }
+        46% {
+        transform: translate(0, -5px) rotate(0deg)
+        }
+        48% {
+        transform: translate(0, 7px) rotate(0deg)
+        }
+        50% {
+        transform: translate(0, 2px) rotate(0deg)
+        }
+        52% {
+        transform: translate(0, -8px) rotate(0deg)
+        }
+        54% {
+        transform: translate(0, 0px) rotate(0deg)
+        }
+        56% {
+        transform: translate(0, 6px) rotate(0deg)
+        }
+        58% {
+        transform: translate(0, 5px) rotate(0deg)
+        }
+        60% {
+        transform: translate(0, 7px) rotate(0deg)
+        }
+        62% {
+        transform: translate(0, -6px) rotate(0deg)
+        }
+        64% {
+        transform: translate(0, -7px) rotate(0deg)
+        }
+        66% {
+        transform: translate(0, -8px) rotate(0deg)
+        }
+        68% {
+        transform: translate(0, 4px) rotate(0deg)
+        }
+        70% {
+        transform: translate(0, -4px) rotate(0deg)
+        }
+        72% {
+        transform: translate(0, -2px) rotate(0deg)
+        }
+        74% {
+        transform: translate(0, 0px) rotate(0deg)
+        }
+        76% {
+        transform: translate(0, 1px) rotate(0deg)
+        }
+        78% {
+        transform: translate(0, 6px) rotate(0deg)
+        }
+        80% {
+        transform: translate(0, -6px) rotate(0deg)
+        }
+        82% {
+        transform: translate(0, -6px) rotate(0deg)
+        }
+        84% {
+        transform: translate(0, 7px) rotate(0deg)
+        }
+        86% {
+        transform: translate(0, 0px) rotate(0deg)
+        }
+        88% {
+        transform: translate(0, 6px) rotate(0deg)
+        }
+        90% {
+        transform: translate(0, 3px) rotate(0deg)
+        }
+        92% {
+        transform: translate(0, 9px) rotate(0deg)
+        }
+        94% {
+        transform: translate(0, 4px) rotate(0deg)
+        }
+        96% {
+        transform: translate(0, 3px) rotate(0deg)
+        }
+        98% {
+        transform: translate(0, -1px) rotate(0deg)
+        }
+        0%, 100% {
+        transform: translate(0, 0) rotate(0deg)
+        }
+        }
+
+        #divText {
+        width: 100%;
+        height: 1.15rem;
+        background-color: rgba(52, 52, 52, .5);
+        text-align: center;
+        /* Safari 和 Chrome: */
+
+        }
+
+        #lbText {
+        display: block;
+        color: white;
+        font-size: 0.54rem;
+        height: 1.15rem;
+        line-height: 1.15rem;
+        position: relative;
+        font-family: "宋体", sans-serif;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        -webkit-animation-play-state: running;
+        -webkit-animation-delay: 0s;
+        }
+    </style>
+</head>
+<script>
+    var scale = 1 / window.devicePixelRatio;
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + 'px';
+    //var arrayFontFamily = new Array("宋体", "仿宋", "黑体", "隶书", "粗黑");//直接定义并初始化
+    var arrayFontAnimation = new Array("expand", "fadeIn", "narrow", "shake-horizontal", "shake-vertical");
+
+
+
+
+    function setFontAnimation(index) {
+        if (index <= 4) {
+            $("#lbText").css("-webkit-animation-name", arrayFontAnimation[index]);
+        } else {
+            $("#lbText").css("-webkit-animation-name", "none");
+        }
+    }
+    function setFontFamily(fontFamily) {
+        setFontAnimation(5);
+        $("#lbText").css("font-family", fontFamily);
+    }
+
+
+    function setFontColor(color) {
+        setFontAnimation(5);
+        $("#lbText").css("color", color);
+    }
+    function setFontSize(size) {
+        setFontAnimation(5);
+        $("#lbText").css("font-size", 0.54 + (size - 0.5) * 0.54 + "rem");//动态设置line-height
+    }
+
+    function connectWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) {
+            callback(WebViewJavascriptBridge)
+        } else {
+            document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function () {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+            );
+        }
+    }
+
+    connectWebViewJavascriptBridge(function (bridge) {
+        bridge.init(function (message, responseCallback) {
+            console.log('JS got a message', message);
+            var data = {
+                'Javascript Responds': '测试中文!'
+            };
+            console.log('JS responding with', data);
+            responseCallback(data);
+        });
+        webBridgeInit();
+    })
+
+    function webBridgeInit() {
+        WebViewJavascriptBridge.registerHandler("setFontFamily", function (fontFamily, responseCallback) {
+            setFontFamily(fontFamily);
+            var data ="<html>"+document.getElementsByTagName('html')[0].innerHTML+"</html>";
+//            var responseData = "setFontFamily Javascript Says Right back aka! =" + fontFamily;
+            responseCallback(data);
+        });
+
+        WebViewJavascriptBridge.registerHandler("setFontAnimation", function (index, responseCallback) {
+            setFontAnimation(index);
+//            var responseData = "Javascript Says Right back aka!";
+            var data ="<html>"+document.getElementsByTagName('html')[0].innerHTML+"</html>";
+            responseCallback(data);
+        });
+
+        WebViewJavascriptBridge.registerHandler("setFontColor", function (color, responseCallback) {
+            setFontColor(color);
+//            var responseData = "Javascript Says Right back aka!";
+            var data ="<html>" + document.getElementsByTagName('html')[0].innerHTML+"</html>";
+            responseCallback(data);
+        });
+
+        WebViewJavascriptBridge.registerHandler("setFontSize", function (size, responseCallback) {
+            setFontSize(size);
+//            var responseData = "Javascript Says Right back aka!";
+            var data ="<html>" + document.getElementsByTagName('html')[0].innerHTML+"</html>";
+            responseCallback(data);
+        });
+
+        WebViewJavascriptBridge.registerHandler("setImg", function (size, responseCallback) {
+            setFontSize(size);
+//            var responseData = "Javascript Says Right back aka!";
+            var data ="<html>" + document.getElementsByTagName('html')[0].innerHTML+"</html>";
+            responseCallback(data);
+        });
+
+        WebViewJavascriptBridge.registerHandler("setText", function (text, responseCallback) {
+            $("#lbText").html(text);
+//            var responseData = "Javascript Says Right back aka!";
+            var data ="<html>" + document.getElementsByTagName('html')[0].innerHTML+"</html>";
+            responseCallback(data);
+        });
+
+    }
+</script>
+<body style="height: 100%;">
+
+
+<div id="divText">
+    <label id="lbText">添加文字</label>
+</div>
+
+</body>
+</html>

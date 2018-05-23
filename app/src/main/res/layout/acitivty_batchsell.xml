@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_myproxy_repertory">
+
+        <TextView
+            android:id="@+id/tvOverflower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="剩余库存140张"
+            android:textColor="#fff" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_batchsell_et"
+            android:digits="1234567890"
+            android:hint="输入对方ID"
+            android:inputType="number"
+            android:paddingLeft="5dp" />
+
+
+        <EditText
+            android:id="@+id/etNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_batchsell_et"
+            android:digits="1234567890"
+            android:hint="输入转卖数量"
+            android:inputType="number"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/selector_myproxy_upgradeproxy"
+        android:gravity="center"
+        android:text="确定转卖"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="32dp"
+        android:text="1、输入对方的ID号，并确认无误，此操作不可逆" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="7dp"
+        android:text="2、转卖成功后，可以通过线下的方式收取转卖费用" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="7dp"
+        android:text="3、您仍然享受转卖出去的账户下发展的无限级会员的10%提成。" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="7dp"
+        android:text="4、转卖数量必须大于等于2，否则无法转卖。" />
+</LinearLayout>

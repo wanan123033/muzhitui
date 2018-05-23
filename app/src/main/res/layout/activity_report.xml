@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:textColor="@color/red_index">
+
+    <ScrollView
+        android:id="@+id/svEditArticle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:text="请选择举报原因"
+                android:textColor="@color/gray_main"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvReport1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|left"
+                        android:maxLength="16"
+                        android:paddingLeft="15dp"
+                        android:text="色情低俗"
+                        android:textColor="#333333"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReport1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_check"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red_index"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvReport2"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|left"
+                        android:maxLength="16"
+                        android:paddingLeft="15dp"
+                        android:text="骚扰"
+                        android:textColor="#333333"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReport2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_check"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red_index"/>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvReport3"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|left"
+                        android:maxLength="16"
+                        android:paddingLeft="15dp"
+                        android:text="整治敏感"
+                        android:textColor="#333333"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReport3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_check"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red_index"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvReport4"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|left"
+                        android:maxLength="16"
+                        android:paddingLeft="15dp"
+                        android:text="违法（暴力、恐怖、造谣）"
+                        android:textColor="#333333"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReport4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_check"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red_index"/>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvReport5"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center|left"
+                        android:maxLength="16"
+                        android:paddingLeft="15dp"
+                        android:text="侵权（诽谤、抄袭）"
+                        android:textColor="#333333"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReport5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_check"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/red_index"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#fff"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvReport6"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|left"
+                        android:maxLength="16"
+                        android:paddingLeft="15dp"
+                        android:text="投诉"
+                        android:textColor="#333333"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReport6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@mipmap/ic_check"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="left|bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:text="举证补充说明（选填）"
+                android:textColor="@color/gray_main"/>
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="10dp"
+                >
+
+
+
+                <base.view.MyGridView
+                    android:id="@+id/gvReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:divider="@color/red_index"
+                    android:dividerHeight="0px"
+                    android:layout_alignParentBottom="true"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"
+                   />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

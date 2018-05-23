@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- solid 一整块背景-->
+    <solid android:color="@color/white" />
+    <!-- stroke 边框-->
+    <stroke
+        android:width="2px"
+        android:color="@color/white" />
+    <!-- solid 角的弧度-->
+    <!-- solid 角的弧度-->
+ <!--   <corners android:radius="5dp" />-->
+</shape>

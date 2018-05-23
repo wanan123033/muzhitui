@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.nevermore.muzhitui">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 地图 -->
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 发送短信的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- 添加手机联系人到手机 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+
+
+
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.nevermore.muzhitui.permission.MIPUSH_RECEIVE" android:protectionLevel="signature" />
+    <!--这里com.xiaomi.mipushdemo改成app的包名-->
+    <uses-permission android:name="com.nevermore.muzhitui.permission.MIPUSH_RECEIVE" />
+    <!--这里com.xiaomi.mipushdemo改成app的包名-->
+    <!-- Android6.0 蓝牙扫描才需要-->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <permission
+        android:name="com.nevermore.muzhitui.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required -->
+    <uses-permission android:name="com.nevermore.muzhitui.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- GCM 配置开始 <
+        <permission
+            android:name="io.rong.app.permission.C2D_MESSAGE"
+            android:protectionLevel="signature" />
+        <uses-permission android:name="io.rong.app.permission.C2D_MESSAGE" />
+    -->
+
+    <application
+        android:name="base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- 广告首页面 simone-->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MyAppTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified"
+            android:configChanges="orientation|keyboardHidden">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:scheme="wxd1d6178de8a22bf2"/>
+                <data
+                    android:host="com.nevermore.muzhitui"
+                    android:pathPrefix="/push_message"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MakeModeActivity"/>
+        <activity android:name=".StartMakeActivity"/>
+        <activity android:name=".QRMakeActivity"/>
+        <activity
+            android:name=".AdMakeActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".SettingActivity"/>
+        <activity android:name=".QrActivity"/>
+        <activity android:name=".MyKehuActivity"/>
+        <activity android:name=".MyWinActivity"/>
+        <activity android:name=".ModifyNameActivity"/>
+        <activity android:name=".MySettingActivity"/>
+        <activity android:name="base.ClipImagActivity"/>
+        <activity android:name=".MaterialActivity"/>
+
+        <!-- shareSdk 分享 -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1105344053"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="微信回调"
+            android:launchMode="singleTop"/>
+        <activity android:name=".LoginActivity"/>
+        <!-- 广告首页面 2.0未使用-->
+        <activity android:name=".SplashActivity"/>
+        <activity android:name=".MyProxy"/>
+        <activity android:name=".BuyProxyActivity"/>
+        <activity android:name=".PayProxyActivity"/>
+        <activity android:name=".MyCard"/>
+
+        <receiver android:name=".receiver.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ProxyUpgradeActivity"/>
+        <activity android:name=".BatchSellActivity"/>
+        <activity
+            android:name=".PagerEditActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name=".PageLookActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".MyModeActivity"/>
+        <activity android:name=".MusicActivity"/>
+        <activity android:name=".PageEditOverActivity"/>
+        <activity android:name=".TipActivity"/>
+        <activity android:name=".DashDetailActivity"/>
+        <activity android:name=".activity.MyModeTwoActivty"/>
+        <activity android:name=".MyModeHtmlActivity"/>
+        <!-- 友盟 -->
+        <!--赵先生  5832bf73b27b0a214d00027e-->
+        <!--拇指推  590acc6a99f0c776c90011dd-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="590acc6a99f0c776c90011dd"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao"/>
+
+        <activity android:name=".activity.RegisterActivity"/><!--注册-->
+        <activity android:name=".activity.ResetPasswordActivity"/><!--重置密码-->
+        <activity android:name=".activity.TabFireWorkActivity"/><!--公共文章-->
+        <activity android:name=".activity.VidioActivity"/><!--视频播放-->
+        <activity android:name=".activity.ThumbChangeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"/><!--拇指秒变-->
+        <activity android:name=".activity.MaterialAllActivity"/>
+        <activity android:name=".activity.UserInfoQRCode"/>
+        <activity android:name=".activity.EditUserInfoActivity"/>
+        <activity android:name=".activity.SystemMsgActivity" />
+        <!--定位-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+
+            android:value="rcY8ij7hFLevylll6H9fxNN31nvQWsAz"/>
+        //key:开发者申请的Key Z5zGzsqqMV5nex4sonCtzLbFjeocuG9D
+        //Z5zGzsqqMV5nex4sonCtzLbFjeocuG9D
+        <activity android:name=".activity.CityListActivity"/>
+        <activity android:name=".activity.NewFriendsActivity"/><!--新的好友-->
+        <activity android:name=".activity.AddFriendsActivity"/><!--添加好友-->
+        <activity android:name=".activity.MyFriendsActivity"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/><!--我的好友-->
+        <!--我的好友-->
+        <!--我的下级-->
+        <activity android:name=".activity.PhoneContactsActivity"/><!--添加手机联系人-->
+        <!--发起聊天-->
+        <!--原创文章编辑-->
+        <activity
+            android:name=".activity.EditInfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/><!--原创文章编辑修改标题-->
+
+        <activity android:name=".activity.SeePersonalInfoActivity"/><!--查看别人的信息-->
+        <!--个人信息-->
+        <activity android:name=".activity.FriendVerifcationActivity"/><!--驗證發送个人信息-->
+        <activity android:name=".activity.InputAddFriendActivity"/><!--根据id查询好友信息个人信息-->
+        <activity android:name=".activity.PersonalInfoActivity"/><!--根据id查询好友信息个人信息-->
+        <activity android:name=".activity.MyWorksActivity"/><!--我的作品-->
+        <activity android:name=".activity.CityPickerActivity"/><!--城市列表-->
+        <activity android:name=".activity.ChatInfoActivity"/><!--聊天详情-->
+        <activity android:name=".activity.SeePersonalInfoIsFriendActivity"/><!--好友详情-->
+        <activity android:name=".activity.MySubordinatesActivity"/><!--我的下级-->
+        <activity android:name=".activity.ReportActivity"/><!--举报-->
+        <activity android:name=".activity.SearchActivity"/><!--搜索我的下级下级-->
+        <activity android:name=".activity.MakeVideoActivity"/><!--制作视频-->
+        <activity android:name=".activity.ConnectWeActivity"/><!--制作视频-->
+        <activity android:name=".activity.WechatAddFriendsActivity"/><!--微信加粉-->
+        <activity android:name=".activity.DownActivity" />
+        <activity android:name=".activity.DynamicDatailActivity" />
+        <activity android:name=".activity.DynamicPersonActivity" />
+        <activity android:name=".activity.DynamicPostedActivity" />
+        <activity android:name=".activity.GFActivity" />
+        <activity android:name=".activity.MyDynamicActivity" />
+        <activity android:name=".activity.DynamicMsgActivity" />
+        <activity android:name=".activity.SnapshotActivity"
+            android:hardwareAccelerated="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".activity.QunExchangeActivity" />
+        <activity
+            android:name=".activity.QunHavePostedActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".activity.QunExchangePostedActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <activity android:name=".activity.QunDetailActivity" />
+        <activity android:name=".activity.MySelfQunActivity" />
+        <activity android:name=".activity.PraisePersonListActivity" />
+        <activity android:name=".activity.PhotoDetailActivity" />
+        <activity android:name=".activity.PopularizeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MztProxyProtocolActivity" />
+
+        <activity
+            android:name=".activity.editPhoto.PhotoActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".activity.editPhoto.OriginalArticleActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".activity.editPhoto.OriginalArticleEditActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".MessageActivity" />
+
+        <!--融云-->
+        <!--高德地图 高德地图的 AppKey-->
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="0a43f74c3b8ffd0b83fd9dee58404623"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.nevermore.muzhitui.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <activity
+            android:name=".activity.rongyun.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="com.nevermore.muzhitui"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <!--会话列表-->
+        <activity
+            android:name=".activity.rongyun.ConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data
+                    android:host="com.nevermore.muzhitui"
+                    android:path="/conversationlist"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+        <!--聚合会话列表-->
+        <activity
+            android:name=".activity.rongyun.SubConversationListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.nevermore.muzhitui"
+                    android:path="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!--公众-->
+        <activity
+            android:name=".activity.rongyun.PublicServiceInfoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.nevermore.muzhitui"
+                    android:pathPrefix="/publicServiceInfo"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!--快速回复-->
+        <activity
+            android:name=".activity.rongyun.QuickReplyActivity"
+            android:configChanges="orientation|keyboardHidden"/>
+        <receiver
+            android:name="com.nevermore.muzhitui.activity.rongyun.NotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 此部分代码需要移植到您的 app 下的 manifest，并且 authorities 指定您的包名。例如：com.android.FileProvider -->
+        <!-- 否则使用拍照功能时，会崩溃 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.nevermore.muzhitui.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path"/>
+        </provider>
+        <!-- imlib config begin -->
+        <!-- imlib config begin 拇指推测试  pwe86ga5p2uk6 需要修改两个地方-->
+        <!-- imlib config begin 拇指推正式  4z3hlwrv47jft 需要修改两个地方-->
+
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="4z3hlwrv47jft"/>
+
+
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:exported="true"
+            android:process=":ipc"/>
+
+        <service
+            android:name="io.rong.imlib.ReConnectService"
+            android:exported="true"/>
+
+        <receiver
+            android:name="io.rong.imlib.ConnectChangeReceiver"
+            android:exported="true"/>
+
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc"/>
+        <!-- imlib config end -->
+
+
+        <!--必选： SDK 核心功能-->
+        <!--第三方相关,向第三方推送服务请求 token 的服务 -->
+        <service
+            android:name="io.rong.push.core.PushRegistrationService"
+            android:exported="false">
+        </service>
+
+        <!-- 处理 push 消息相关的服务 -->
+        <service
+            android:name="io.rong.push.core.MessageHandleService"
+            android:exported="true">
+        </service>
+
+        <!-- push服务 -->
+        <service
+            android:name="io.rong.push.PushService"
+            android:exported="true"
+            android:process="io.rong.push">  <!-- push进程，可以改名 -->
+        </service>
+
+        <receiver android:name="base.LogcatReceiver">
+            <intent-filter>
+                <action android:name="com.muzhitui.logcat.recevier" />
+            </intent-filter>
+        </receiver>
+        <!-- push 相关事件接收器 -->
+        <receiver
+            android:name="io.rong.push.PushReceiver"
+            android:process="io.rong.push">   <!-- 此处进程可以改名，名称需要和PushService所在进程统一 -->
+            <!-- 心跳事件 -->
+            <intent-filter>
+                <action android:name="io.rong.push.intent.action.HEART_BEAT"/>
+            </intent-filter>
+            <!-- 网络变动事件 -->
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- 部分用户事件 -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+
+        <!--必选： SDK 核心功能-->
+
+        <!-- X5 服务  -->
+        <service android:name=".X5Service" />
+
+        <activity
+            android:name="com.tencent.smtt.sdk.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 融云消息推送 -->
+            <!-- 小米手机推送-->
+        <service
+            android:enabled="true"
+            android:process=":pushservice"
+            android:name="com.xiaomi.push.service.XMPushService"/>
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" />
+        <!--注：此service必须在3.0.1版本以后（包括3.0.1版本）加入-->
+        <service
+            android:enabled="true"
+            android:exported="true"
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler" />
+        <service android:enabled="true"
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService" />
+        <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入-->
+        <receiver
+            android:exported="true"
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:exported="false"
+            android:process=":pushservice"
+            android:name="com.xiaomi.push.service.receivers.PingReceiver" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+
+<!-- GCM 配置 <
+        <receiver android:name="com.google.android.gms.gcm.GcmReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.nevermore.muzhitui" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="io.rong.push.platform.RongGcmListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name="io.rong.push.platform.RongGCMInstanceIDListenerService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+-->
+
+        <!-- 极光推送-->
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.nevermore.muzhitui"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.nevermore.muzhitui"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.nevermore.muzhitui" />
+            </intent-filter>
+        </activity>
+        <!-- SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.nevermore.muzhitui" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MyReleaseQunActivity" />
+        <activity android:name=".activity.GenSnapActivity" />
+        <activity android:name=".activity.WxUseDirectionsActivity" />
+        <activity android:name=".activity.QrHomeActivity" />
+        <activity android:name=".activity.GenQRCodeActivity" />
+        <activity android:name=".activity.StringGenQRActivity" />
+        <activity android:name=".activity.RecognitionQrActivity" />
+        <activity android:name=".activity.NetWorkSnapActivity" />
+        <activity android:name=".activity.BeautifyQrActivity" />
+        <activity android:name=".activity.VideoDownActivity" />
+        <activity android:name=".activity.MyDownVideoActivity" />
+        <activity android:name=".activity.WxAddFriendActivity" />
+        <activity android:name=".activity.WxHuFenActivity" />
+        <activity android:name=".activity.WxBatchActivity" />
+        <activity android:name=".activity.WxJZJFActivity" />
+        <activity android:name=".activity.WxHDJFActivity" />
+        <activity android:name=".activity.BusinessPostedActivity" />
+        <activity android:name=".activity.BusinessDatailActivity" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.JSVideoDownActivity" android:hardwareAccelerated="true"/>
+
+        <!-- Required SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required since 3.0.7 -->
+        <!-- 新的tag/alias接口结果返回需要开发者配置一个自定的广播 -->
+        <!-- 该广播需要继承JPush提供的JPushMessageReceiver类, 并如下新增一个 Intent-Filter -->
+        <receiver
+            android:name=".receiver.MyJPushMessageReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+                <category android:name="com.nevermore.muzhitui" />
+            </intent-filter>
+        </receiver>
+
+        <!-- User defined. 用户自定义的广播接收器-->
+        <receiver
+            android:name=".receiver.MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <!--Required 用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!--Required 用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!--Required 用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!--Required 用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <category android:name="com.nevermore.muzhitui" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. For publish channel feature -->
+        <!-- JPUSH_CHANNEL 是为了方便开发者统计APK分发渠道。-->
+        <!-- 例如: -->
+        <!-- 发到 Google Play 的APK可以设置为 google-play; -->
+        <!-- 发到其他市场的 APK 可以设置为 xxx-market。 -->
+        <!-- 目前这个渠道统计功能的报表还未开放。-->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="xxx-market"/>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data android:name="JPUSH_APPKEY" android:value="b04be96eb48ed76d678e137b"/>
+    </application>
+
+</manifest>

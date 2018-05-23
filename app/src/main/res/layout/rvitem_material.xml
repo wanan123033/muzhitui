@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlyt"
+    android:layout_width="match_parent"
+    android:layout_height="69dp"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/ivHead"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="7dp"
+        android:text="王小华" />
+
+    <TextView
+        android:id="@+id/tvSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="70dp"
+        android:singleLine="true"
+        android:text="阅读"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/two" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="98dp"
+        android:singleLine="true"
+        android:text="2016-01-15"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/two" />
+
+    <TextView
+        android:id="@+id/tvReadNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:singleLine="true"
+        android:text="512阅读"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/two" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/grayLine" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/red_index"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="bottom"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:text="定位到的位置"
+        android:textColor="@color/gray_orange"/>
+
+
+    <TextView
+        android:id="@+id/tvProvinceName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="#fff"
+        android:drawableLeft="@mipmap/ic_location"
+        android:drawablePadding="17dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="bottom"
+        android:paddingBottom="7dp"
+        android:paddingLeft="15dp"
+        android:text="全部"
+        android:textColor="@color/gray_orange"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tvProvinceCity"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+
+            android:text="aaaaa"
+            android:layout_gravity="center_vertical"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+
+            android:textSize="12sp"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:text="已选择地区"
+            android:textColor="@color/gray_main"
+            android:layout_gravity="center_vertical"
+            android:gravity="center|left"
+            android:paddingRight="30dp"
+
+            android:textSize="12sp"/>
+    </RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1px"/>
+    <ListView
+        android:id="@+id/provinceList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:divider="@color/red_index"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:scrollbars="none"/>
+
+
+</LinearLayout>

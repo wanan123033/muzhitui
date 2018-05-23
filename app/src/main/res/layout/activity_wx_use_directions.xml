@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:lineSpacingExtra="3dp"
+            android:text="1、请点击立刻加粉，如果您未设置拇指推访问您的通讯录，请点击设置允许访问通讯录才能正常加好友（此操作为加好友的必要条件）；"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@mipmap/activity_wxinfo1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:text="2、根据区域筛选需要添加的人，勾选你需要添加的人（默认会勾选最新的50个人）；"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@mipmap/activity_wxinfo2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="3、点击“立即加粉”会员加粉日上线为400人（该功能只对会员开放），点击加粉之后请等待几秒，你可以继续添加好友， 或者打开微信手动添加好友通讯录；"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@mipmap/activity_wxinfo3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:text="4、打开微信之后，点击“新的朋友”--添加手机联系人；进入添加好友页面，点击添加，等待对方通过。同时建议用户不要频繁使用微信添加好友，一次添加最好不要超过50个，需要隔几个小时后再次添加，防止由于频繁多次添加好友导致微信限制你的好友添加功能；"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@mipmap/activity_wxinfo4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="5、如果你想撤销加友这一操作，你还可以通过“清除数据”一键删除添加到通讯录的号码。我们拇指推APP都不会改变您的通讯录任何的原始数据，只是增加和减少我们写入的拇指推好友数据，此数据是以 “MZT”作为通讯录联系人命名的；"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@mipmap/activity_wxinfo4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:text="\n常见加粉问题：\n\n1、如果点击立即加粉，微信没有一个好友，必须要满足以下2个条件，开启拇指推和微信读取通讯录联系人。请根据自己的手机对号入座，由于安卓机型太多，可能每个手机的设置有一点差异，可以在设置里面，多找找。\n\n2、加粉失败的常见问题？\n未打开我们APP读取手机联系人的权限\niPhone用户请到［设置>隐私>通讯录］打开我们APP的应用权限\n\nAndroid用户请到［设置>安全中心>应用权限管理］打开本应用的权限（Android不同品牌手机的设置方法可能不同）\n\n小米手机：系统与安全>安全中心>授权管理>应用权限管理>权限管理>联系人记录>找到我们APP然后打开权限\n\n三星手机：设定>更多>安全>应用程序许可>找到我们App>找到读取联系人打开权限\n\nvivo手机：i管家>软件管理>软件权限管理>1.访问联系人设置我们APP，2.写/删除联系人设置我们APP\n\n华为手机：设置>权限管理>读取联系人>设置我们APP允许\n\n魅族手机：设置>应用控制>找到我们App>读取联系人信息设置为允许\n\nOPPO手机：设置>常规>安全服务/安全与隐私>个人信息安全>按应用程序管理>找到我们APP允许读取通讯录\n\n酷派手机：设置-安全-应用操作-开启我们APP读取联系人\n\n如果以上方法还是无效\n卸载并重新安装我们的APP，安装或使用过程，有出现任何与联系人或通讯录权限相关的，请选择允许，\n拇指推APP只是通过读取通讯录来匹配我们写入的好友信息，无论是读取通讯录还是清除好友数据，都不会篡改您通讯录的任何原始数据，请放心使用；"/>
+    </LinearLayout>
+</ScrollView>

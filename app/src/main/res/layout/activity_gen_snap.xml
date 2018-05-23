@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel_view"
+        android:layout_width="match_parent"
+        android:layout_height="985dp"
+        android:background="@mipmap/activity_gen_snap_bg">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_topic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/civ_topic"
+            android:text="名称"/>
+        <ImageView
+            android:id="@+id/iv_head_qr"
+            android:layout_width="110dp"
+            android:layout_height="115dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="778dp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llytMy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/bg_mw"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivHead"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_qq"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Whi"
+                android:layout_below="@id/ivHead"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="财富数量"
+                android:layout_below="@id/tvName"
+                android:textColor="#ff8022"/>
+
+            <TextView
+                android:id="@+id/tvMemberType"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvMoney"
+                android:text="hhhh"
+                android:textColor="#fff"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rel_guanzhu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_guanzhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/attention"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:drawablePadding="4dp"
+                    android:text="关注(20)"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/civ_guan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:text="12"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="53dp"
+                        android:gravity="center"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="#D2D4D8"
+                    android:layout_gravity="bottom"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:id="@+id/ll_fensi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/fans"/>
+                        <TextView
+                            android:id="@+id/tv_fensi"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="粉丝(20)"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/civ_fen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:text="12"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginLeft="53dp"/>
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="#D2D4D8"
+                    android:layout_gravity="bottom" />
+                <LinearLayout
+                    android:id="@+id/ll_Dash"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/withdrawal"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="提现"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="#D2D4D8"
+                    android:layout_gravity="bottom" />
+            <LinearLayout
+                android:id="@+id/ll_buy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buyvip"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="4dp"
+                    android:text="购买会员"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="23dp"
+                    android:src="@drawable/ic_my_dash"
+                    android:visibility="gone"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="23dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_my_buy"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flytZuoPing"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_zuoping"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_zuoping"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_zuoping"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="我的作品"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/ic_mw_back"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30dp"
+            android:background="@color/grayLine"/>
+        <RelativeLayout
+            android:id="@+id/flytDynamic"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_my_firends"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_my_firends"/>
+            <TextView
+                android:id="@+id/tv_my_firends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_my_firends"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_my_firends"
+                android:drawablePadding="5dp"
+                android:textSize="13sp"
+                android:text="我的动态"/>
+            <TextView
+                android:id="@+id/tvDynamicNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/ic_my_tip"
+                android:layout_alignTop="@id/iv_my_firends"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/iv_my_firends"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/ic_mw_back"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30dp"
+            android:background="@color/grayLine"/>
+
+        <RelativeLayout
+            android:id="@+id/flytWin"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_my_win"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_my_win"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_my_win"
+                android:layout_centerVertical="true"
+                android:textSize="13sp"
+                android:text="我的收益"/>
+
+            <TextView
+                android:id="@+id/tvWinNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="26dp"
+                android:background="@drawable/ic_my_tip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mw_back"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30dp"
+            android:background="@color/grayLine"/>
+
+        <RelativeLayout
+            android:id="@+id/flytQr"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_myqr"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_myqr"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_alignTop="@id/iv_myqr"
+                android:layout_toRightOf="@id/iv_myqr"
+                android:textSize="13sp"
+                android:text="推广奖励"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orangered"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:textSize="13sp"
+                android:text="推广一个会员可获最高268元现金奖励"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_mw_back"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:layout_alignTop="@id/iv_myqr"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_spread"/>
+
+            <ImageView
+                android:id="@+id/iv_my_connect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/iv_myqr"
+                android:layout_marginTop="110dp"
+                android:background="@mipmap/ic_my_connect" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/flytProxy"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="6dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_myaccount_proxy"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_myaccount_proxy"/>
+            <TextView
+                android:id="@+id/tv_prexy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_myaccount_proxy"
+                android:layout_alignTop="@id/iv_myaccount_proxy"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="我的代理账户" />
+
+            <TextView
+                android:id="@+id/tvPrixyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="26dp"
+                android:textColor="#fff"
+                android:layout_alignTop="@id/iv_myaccount_proxy"
+                android:layout_alignParentRight="true"
+                android:textSize="7dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/iv_myaccount_proxy"
+                android:src="@drawable/ic_mw_back" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/flytSetting"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="6dp"
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_my_setting"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ic_my_setting"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_alignTop="@id/iv_my_setting"
+                android:layout_toRightOf="@id/iv_my_setting"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="设置"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="9dp"
+                android:layout_alignTop="@id/iv_my_setting"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_mw_back"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="30dp"
+            android:background="@color/grayLine"/>
+
+        <RelativeLayout
+            android:id="@+id/flytConnect"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+
+            android:background="#fff">
+            <ImageView
+                android:id="@+id/iv_my_connec"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/ic_my_connect"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_alignTop="@id/iv_my_connec"
+                android:layout_toRightOf="@id/iv_my_connec"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="联系我们"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/iv_my_connec"
+                android:layout_marginRight="9dp"
+                android:src="@drawable/ic_mw_back"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivHeadQr"
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_mw"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="27dp"
+            android:layout_marginTop="5.3dp"
+            android:text="点击推广二维码"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+</ScrollView>

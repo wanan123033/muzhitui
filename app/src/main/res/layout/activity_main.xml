@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <base.view.CustomViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <!-- 底部导航 -->
+
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_gravity="bottom"
+            android:background="@mipmap/main_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/seal_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/tab_img_chats"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:focusable="false"
+                        android:scaleType="centerInside"/>
+
+                    <TextView
+                        android:id="@+id/tab_text_chats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tab_img_chats"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="首页"
+                        android:textColor="#abadbb"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seal_dynamic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:id="@+id/rel_dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/tab_img_contact"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:focusable="false"
+                        android:scaleType="centerInside"/>
+                    <!--android:background="@drawable/dymain_nomal"-->
+                    <!--android:src="@drawable/tab_contact_list"-->
+
+                    <TextView
+                        android:id="@+id/tab_text_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tab_img_contact"
+                        android:layout_centerHorizontal="true"
+                        android:text="动态"
+                        android:textColor="#abadbb"
+                        android:textSize="10sp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:id="@+id/seal_find"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/tab_img_find"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:focusable="false"
+                        android:scaleType="centerInside"/>
+                    <!--android:src="@drawable/tab_find"-->
+
+                    <TextView
+                        android:id="@+id/tab_text_find"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tab_img_find"
+                        android:layout_centerHorizontal="true"
+                        android:text="人脉"
+                        android:textColor="#abadbb"
+                        android:textSize="10sp"/>
+
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/mine_red"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/ic_my_tip"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seal_me"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/tab_img_me"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="#ffffff"
+                        android:focusable="false"
+                        android:scaleType="centerInside"/>
+                    <!--android:src="@drawable/tab_find"-->
+
+                    <TextView
+                        android:id="@+id/tab_text_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tab_img_me"
+                        android:layout_centerHorizontal="true"
+                        android:text="我的"
+                        android:textColor="#abadbb"
+                        android:textSize="10sp"/>
+                    <ImageView
+                        android:id="@+id/me_red"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:background="@mipmap/aii"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/iv_main_add"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/iv_add"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#abadbb"
+                android:textSize="10sp"
+                android:text="工具台"/>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

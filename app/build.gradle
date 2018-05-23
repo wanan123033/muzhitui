@@ -1,0 +1,170 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.jakewharton.butterknife'
+
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.nevermore.muzhitui"
+        minSdkVersion 21
+        targetSdkVersion 23
+        //原版本
+        /**  versionCode 7//后台需要改成7
+        versionName "2.9.0"*/
+        /**simone version versionCode app的版本号，上个版本versionCode 7版本升级根据版本号如果服务器返回的版本号比手机app 的要高，就提示升级 目前服务器的是8 versionName 版本名字为3.0时*/
+        versionCode 15
+        versionName "4.1.3"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "x86"
+        }
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("lovebaby.jks")
+            storePassword "lovebaby"
+            keyAlias "lovebaby"
+            keyPassword "lovebaby"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false//改为false 就解决了
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+
+    dataBinding {
+        enabled true
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "2048M"
+    }
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+//    allprojects {
+//          gradle.projectsEvaluated {
+//              tasks.withType(JavaCompile) {
+//                  options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+//              }
+//          }  repositories {//角标需要添加的mavenCentral仓库
+//
+//              mavenCentral()
+//          }
+//      }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+repositories {
+    flatDir {
+        dirs 'aars'
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.0.1'
+
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    //java.lang.NoClassDefFoundError: Failed resolution of: Landroid/support/v7/wi
+
+    // 将 compile 'com.android.support:design:23.1.1'改成  compile 'com.android.support:design:23.2.1'就好了
+
+    //网址如下 ：http://blog.csdn.net/zhou12314/article/details/52120063
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.3'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
+    //Retrofit2所需要的包
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    //ConverterFactory的Gson依赖包
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    //适配器
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0-beta4'
+    compile 'com.zhy:okhttputils:2.6.2'
+    //ConverterFactory的String依赖包
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.google.zxing:android-core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.0.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.0.7@aar'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.github.orhanobut:logger:1.12'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.wx.ovalimageview:roundimageview:1.1.0'
+    compile 'com.kaopiz:kprogresshud:1.0.2'
+    compile 'com.kevin:wraprecyclerview:1.0.6'
+    compile 'net.robinx:lib.blur:1.0.1'
+    //    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile project(':cptr')
+    compile project(':pickerview')
+    compile project(path: ':WheelPicker')
+    compile project(':library')
+    compile project(':galleryfinal')
+    compile files('libs/MobCommons-2016.0301.1053.jar')
+    compile files('libs/MobTools-2016.0301.1053.jar')
+    compile files('libs/ShareSDK-Core-2.7.0.jar')
+    compile files('libs/ShareSDK-QQ-2.7.0.jar')
+    compile files('libs/ShareSDK-QZone-2.7.0.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.0.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.0.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.0.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.0.jar')
+    compile files('libs/umeng-analytics-v6.0.4.jar')
+    //友盟
+    provided 'com.umeng.analytics:analytics:latest.integration'
+    compile project(':citylist')
+    compile files('libs/xUtils-3.1.22.jar')
+    compile project(':libqrcode')
+    compile project(':IMKit')
+    compile project(':IMLib')
+    compile files('libs/AMap_2DMap_V2.9.0_20160525.jar')
+    compile files('libs/AMap_Channel_Location_V1.4.0_20160708.jar')
+    compile files('libs/AMap_Search_V3.4.0_20160811.jar')
+    compile project(':ShortcutBadger')
+
+    //    compile project(':icarus')
+
+    //    compile project(':samples')
+
+    //    compile files('libs/fastjson-1.2.5.jar')
+    compile project(':citypickerview')
+    compile 'jp.wasabeef:richeditor-android:1.2.0'
+    compile files('libs/tbs_sdk.jar')
+    compile files('libs/utdid4all-1.0.4.jar')
+    compile files('libs/MiPush_SDK_Client_3_2_2.jar')
+    compile(name: 'HMS-SDK-2.4.0.300', ext: 'aar')
+    compile files('libs/jcore-android-1.1.6.jar')
+    compile files('libs/jpush-android-3.0.8.jar')
+}

@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+             tools:context="com.nevermore.muzhitui.fragment.MyKehuFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMysub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/item_lv_myfriend"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvPagesMySub"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivPreMysub"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_pages_pre" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPagesMysub"
+                android:layout_width="wrap_content"
+                android:layout_height="15.3dp"
+                android:layout_weight="1"
+                android:listDivider="@drawable/ic_pages_divider"
+                app:layoutManager="LinearLayoutManager"
+                tools:listitem="@layout/rvitem_pages"></android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/ivNextMysub"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_pages_next" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

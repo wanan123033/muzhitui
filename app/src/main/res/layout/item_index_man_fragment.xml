@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llIndexMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="161dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/rpv"
+                android:layout_width="match_parent"
+                android:layout_height="161dp"
+                app:rollviewpager_play_delay="3000" />
+
+        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+                <LinearLayout
+                    android:id="@+id/ivIndexVidio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/iv_index_vidio"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="新手教程"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/orange"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ivIndexCard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/iv_index_card"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="名片"
+                    android:textColor="@color/black_index"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ivIndexModel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/iv_index_model"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="模板"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_index"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ivIndexToPromote"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/iv_index_to_promote"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="去推广"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_index"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ivIndexPublicArticles"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@mipmap/iv_index_public_articles"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="公共文章"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black_index"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/red_index"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="精品原创"
+            android:textColor="@color/gray_re"
+            android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/ivItemIndexfTitle"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="深圳的世外桃源你不可错过"
+            android:textColor="@color/inextcolor"
+            android:ellipsize="marquee"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/ivItemIndexfName"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:text="熊猫君"
+                android:textColor="@color/gray_index"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/ivItemIndexfData"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="2016-12-03"
+                android:textColor="@color/gray_index"
+
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/ivItemIndexfReadNum"
+                android:layout_width="0.0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:gravity="center|right"
+                android:text="2630阅读"
+                android:textColor="@color/gray_index"
+
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivItemIndexfImage"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        />
+    <!--  android:background="@mipmap/background"-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/red_index"
+        android:paddingLeft="10dp"
+        />
+</LinearLayout>

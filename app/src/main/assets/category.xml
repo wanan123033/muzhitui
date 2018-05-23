@@ -1,0 +1,12 @@
+<root>
+  <province name="全部行业" />
+  <province name="美妆" />
+  <province name="美食" />
+  <province name="服饰鞋包" />
+  <province name="家居百货" />
+  <province name="数码产品" />
+  <province name="微商产品" />
+  <province name="软件服务" />
+  <province name="生活服务" />
+  <province name="其他" />
+</root>

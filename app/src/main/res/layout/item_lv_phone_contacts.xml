@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:textColor="#fff">
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/ivPhoneContactsHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_qq"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_head_whitebg"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvPhoneContactsName"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+                android:text="马云"
+
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvPhoneContactsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dp"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:paddingTop="5px"
+                android:singleLine="true"
+                android:text="马云"
+
+                android:textColor="#999999"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPhoneContactsInvitation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_main_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvInvitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/ic_add_constant"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:text="邀请"
+                android:textColor="@color/black_re"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvInvitationstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:text="已加入"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/gray_index"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/tvPhoneContactsHaveinvited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:text="已邀请"
+           android:visibility="gone"
+            android:textColor="@color/gray_index"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="50dp"
+            android:background="@color/grayLine"/>
+    </LinearLayout>
+</LinearLayout>

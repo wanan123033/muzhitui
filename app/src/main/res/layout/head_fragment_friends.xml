@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/flContactsNewfriends"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:id="@+id/iv_newFriend"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/iv_newfriends"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_newFriend"
+            android:layout_marginLeft="8dp"
+            android:text="新的好友"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mw_back" />
+
+        <TextView
+            android:id="@+id/tvContactsNewFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:gravity="center"
+            android:background="@drawable/ic_my_tip"
+            android:layout_alignParentRight="true"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="7dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="35dp"
+            android:background="@color/grayLine" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/flContactsMyfriends"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:id="@+id/iv_my_friend"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/iv_myfriends"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_my_friend"
+
+            android:text="我的好友"
+            android:layout_marginLeft="8dp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvContactsMyFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:gravity="center"
+            android:background="@drawable/ic_my_tip"
+            android:layout_alignParentRight="true"
+            android:text="2"
+            android:textColor="#fff"
+            android:textSize="7dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mw_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="35dp"
+            android:background="@color/grayLine" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/flContactsLowerLevel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:id="@+id/iv_contacts"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/iv_lower_level"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_contacts"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="我的推荐用户"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvContactsLowerLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:gravity="center"
+            android:background="@drawable/ic_my_tip"
+            android:layout_alignParentRight="true"
+            android:text="3"
+            android:textColor="#fff"
+            android:textSize="7dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_mw_back" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="35dp"
+            android:background="@color/grayLine" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll_contact"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:id="@+id/iv_contact"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/xiaoxi_icon"/>
+        <TextView
+            android:layout_toRightOf="@id/iv_contact"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/seal_numgh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:gravity="center"
+            android:background="@drawable/ic_my_tip"
+            android:layout_alignParentRight="true"
+            android:text="3"
+            android:textColor="#fff"
+            android:textSize="7dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/ic_mw_back" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/grayLine" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="54px"
+        android:layout_gravity="center"
+        android:background="@color/red_index"
+        android:gravity="center|left"
+        android:paddingLeft="20px"
+        android:text="所有人脉"
+        android:textColor="@color/gray_re"
+        android:textSize="24px" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.nevermore.muzhitui.MyProxy">
+
+
+    <LinearLayout
+        android:id="@+id/llytProxy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.nevermore.muzhitui.MyLowelLeverActivity">
+
+        <base.view.MyTabLayout
+            android:id="@+id/tbl"
+            style="@style/MyCustomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flytProxy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="164dp"
+            android:text="对不起您目前尚不是代理" />
+
+        <TextView
+            android:id="@+id/tvApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="199dp"
+            android:background="@drawable/ic_proxy_applyproxy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+
+                android:text="代理热线："/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvMyProxyPhone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="13728775102"
+                android:textColor="@color/blue"
+                android:textSize="25px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="（宋经理）"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="170px"
+            android:layout_marginRight="170px"
+            android:layout_marginTop="460dp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvProxyProtocol"
+            android:layout_width="160dp"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="16dp"
+            android:text="查看《拇指推代理收益制度》"
+            android:textColor="#3F5699" />
+    </FrameLayout>
+
+
+</FrameLayout>

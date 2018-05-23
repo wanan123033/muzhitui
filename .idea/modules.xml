@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMLib/IMLib.iml" filepath="$PROJECT_DIR$/IMLib/IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShortcutBadger/ShortcutBadger.iml" filepath="$PROJECT_DIR$/ShortcutBadger/ShortcutBadger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/WheelPicker/WheelPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/citylist/citylist.iml" filepath="$PROJECT_DIR$/citylist/citylist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/citypickerview/citypickerview.iml" filepath="$PROJECT_DIR$/citypickerview/citypickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cptr/cptr.iml" filepath="$PROJECT_DIR$/cptr/cptr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/galleryfinal/galleryfinal.iml" filepath="$PROJECT_DIR$/galleryfinal/galleryfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libqrcode/libqrcode.iml" filepath="$PROJECT_DIR$/libqrcode/libqrcode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/muzhitui-zqb.iml" filepath="$PROJECT_DIR$/muzhitui-zqb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+    </modules>
+  </component>
+</project>

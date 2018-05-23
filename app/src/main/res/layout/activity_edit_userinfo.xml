@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:textColor="@color/red_index">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tvEditUICancel"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvEditUITitle"
+            android:layout_width="0.0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+
+
+            android:textColor="#fff"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvEditUIFinish"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:gravity="center"
+
+            android:text="完成"
+            android:textColor="@color/green"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlEditUIName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <EditText
+
+            android:id="@+id/tvEditUIName"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="#fff"
+
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/ivEditUIDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12sp"
+            android:src="@mipmap/ic_cancel_text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEditUIWXid"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <EditText
+
+            android:id="@+id/tvEditUIWXid"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="#fff"
+
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+
+            android:inputType="text"
+            android:maxLength="16"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/ivEditUIWXidDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_cancel_text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEditUIPhone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <EditText
+
+            android:id="@+id/tvEditUIPhone"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="#fff"
+
+            android:drawablePadding="10dp"
+            android:gravity="center|left"
+
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/ivEditUIPhoneDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_cancel_text"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llEditUISex"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:id="@+id/rlEditUIFemale"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="#fff"
+            >
+
+            <TextView
+
+                android:id="@+id/tvEditUIFemale"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+
+                android:maxLength="16"
+                android:paddingLeft="10dp"
+                android:text="男"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/ivEditUIFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_check"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/red_index"/>
+
+        <RelativeLayout
+            android:id="@+id/rlEditUIMale"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:background="#fff"
+            >
+
+            <TextView
+
+                android:id="@+id/tvEditUIMale"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+
+                android:maxLength="16"
+                android:paddingLeft="10dp"
+                android:text="女"
+                android:textColor="#333333"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/ivEditUIMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/ic_check"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlEditUIProduce"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+      android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/tvEditUIProduce"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#fff"
+            android:gravity="left"
+            android:lineSpacingExtra="5dp"
+            android:maxLength="200"
+            android:padding="10dp"
+            android:textColor="#333333"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/tvFontLength"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center|right"
+            android:paddingRight="20dp"
+            android:text="1/100"/>
+
+    </RelativeLayout>
+</LinearLayout>

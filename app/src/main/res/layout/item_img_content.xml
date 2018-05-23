@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="111dp"
+    android:layout_height="110dp"
+    android:layout_marginBottom="2dp">
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/iv_playbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#330F0F0F"/>
+    <TextView
+        android:id="@+id/tv_seeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="13sp"
+        android:text="  共(9)图\n查看更多"/>
+</RelativeLayout>

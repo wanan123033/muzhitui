@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/ivStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_makemode_style_add" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_mw_cloase" />
+
+    <ImageView
+        android:id="@+id/ivStyleSelect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_makemode_styl_selected"
+        android:visibility="gone" />
+
+</FrameLayout>

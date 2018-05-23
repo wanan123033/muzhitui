@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/slyt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:clickToClose="true">
+<!--我的原创页面item-->
+    <LinearLayout
+        android:id="@+id/llytOpt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tag="Bottom4">
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@color/yellow"
+            android:drawablePadding="5dp"
+
+            android:drawableTop="@drawable/ic_mw_edit"
+          android:gravity="center_horizontal"
+            android:paddingTop="80dp"
+            android:text="编辑"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:drawablePadding="5dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_mw_delete"
+
+
+            android:paddingTop="80dp"
+            android:text="删除"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/ivItemIndexfTitle"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="深圳的世外桃源你不可错过"
+                android:textColor="@color/black"
+                android:ellipsize="marquee"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/ivItemIndexfName"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="熊猫君"
+                    android:textColor="@color/gray_index"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/ivItemIndexfData"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:gravity="center"
+                    android:text="2016-12-03"
+                    android:textColor="@color/gray_index"
+
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/ivItemIndexfReadNum"
+                    android:layout_width="0.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:gravity="center|right"
+                    android:text="2630阅读"
+                    android:textColor="@color/gray_index"
+
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivItemIndexfImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/red_index"
+            android:paddingLeft="10dp"
+            android:textSize="10sp"
+            />
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

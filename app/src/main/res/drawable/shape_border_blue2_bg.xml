@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- solid 一整块背景-->
+    <solid android:color="@color/white" />
+    <!-- stroke 边框-->
+    <stroke
+        android:width="1px"
+        android:color="@color/liji_material_blue_" />
+    <!-- solid 角的弧度-->
+    <corners android:radius="3dp" />
+
+
+</shape>

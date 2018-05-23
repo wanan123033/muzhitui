@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_proxyupgrade">
+
+        <TextView
+            android:id="@+id/tvSupplyMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="31dp"
+            android:text="应付金额："
+            android:textColor="#fff"
+            android:textSize="17dp" />
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/rgProxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbA"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/selector_proxyupgrade_choice"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="A级代理：300张*80元/张=24000元，10%无限提成" />
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_proxyupgrade_choice"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="B级代理：200张*100元/张=20000元，10%无限提成" />
+
+        <RadioButton
+            android:id="@+id/rbC"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_proxyupgrade_choice"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="C级代理：100张*120元/张=12000元，10%无限提成" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#949494" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="8dp"
+        android:text="您需要补齐套餐差价，您将多获得200个库存"
+        android:textColor="#f58f0c" />
+
+    <CheckBox
+        android:id="@+id/cbAgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/selector_proxyupgrade_agree"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="我已阅读《拇指推代理协议》" />
+
+    <TextView
+        android:id="@+id/tvPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_myproxy_upgradeproxy"
+        android:gravity="center"
+        android:text="确定支付"
+        android:textColor="#fff" />
+</LinearLayout>

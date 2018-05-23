@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:scrollbars="none"
+              android:textColor="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:id="@+id/friendBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/backicon"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:layout_centerVertical="true"
+            android:text="我的好友"
+            android:textSize="15sp"
+
+            android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/addFriend"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="添加好友"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#E8E8E8"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/input_search_query"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/shape_white_bg"
+                android:gravity="center"
+                android:drawableLeft="@drawable/icon_search"
+                android:hint="搜索"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingLeft="5dip"
+                android:paddingRight="25dip"
+
+                android:singleLine="true"
+                android:text=""
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/ivInputMyfriendsDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:src="@mipmap/ic_cancel_text"/>
+        </RelativeLayout>
+
+        <com.chanven.lib.cptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                                                    android:id="@+id/pcMyFriendFlyt"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+
+                                                    android:background="#fff"
+                                                    cube_ptr:ptr_duration_to_close="200"
+                                                    cube_ptr:ptr_duration_to_close_header="1000"
+                                                    cube_ptr:ptr_keep_header_when_refresh="true"
+                                                    cube_ptr:ptr_pull_to_fresh="false"
+                                                    cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                                                    cube_ptr:ptr_resistance="1.7">
+
+            <android.support.v7.widget.RecyclerView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                    xmlns:tools="http://schemas.android.com/tools"
+                                                    android:id="@+id/lvMyFriend"
+                                                    android:background="#fff"
+                                                    android:name="com.nevermore.muzhitui.fragment.MyWorksFragment"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:divider="@color/red_index"
+                                                    app:layoutManager="LinearLayoutManager"
+                                                    tools:context=".fragment.MyWorksWorksFragment"
+                                                    tools:listitem="@layout/item_lv_myfriend" />
+        </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+
+
+      <!--  <ListView
+            android:id="@+id/lvMyFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:divider="@color/red_index"
+            android:dividerHeight="0px"/>-->
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>拇指推</title>
+    <meta name="viewport"
+          content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/ic_video.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+    <script>
+        function imitateClick(oElement, iClientX, iClientY) {
+            var oEvent;
+            if (document.createEventObject) { //For IE
+                oEvent = document.createEventObject();
+                oEvent.clientX = iClientX;
+                oEvent.clientY = iClientY;
+                oElement.fireEvent("onclick", oEvent);
+            } else {
+                oEvent = document.createEvent("MouseEvents");
+                oEvent.initMouseEvent("click", true, true, document.defaultView, 0, 0, 0,
+                        iClientX, iClientY/*, false, false, false, false, 0, null*/);
+                oElement.dispatchEvent(oEvent);
+            }
+        }
+
+        $(document).ready(function () {
+            /* $("#a").click(function () {
+             //adding your code here　　
+             })*/
+            //  alert($("html").width());
+            $("div").click(function () {//event
+                //   alert(event.clientX);
+                $("div").hide();
+                //  imitateClick( $("iframe"), event.clientX, event.clientY);
+            });
+        });
+    </script>
+</head>
+<body style="height: 100%;">
+<iframe frameborder="0" width="100%" height="100%"
+        src="http://v.qq.com/iframe/player.html?vid=j0192p3ckpe&tiny=0&auto=0"></iframe>
+<img data-src="../img/ic_video.jpg" width="100%" >
+<div></div>
+
+</body>
+</html>

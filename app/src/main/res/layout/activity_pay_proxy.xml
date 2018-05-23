@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nevermore.muzhitui.PayProxyActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_myproxy_repertory">
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="29dp"
+            android:text="您申请的是A级代理"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="53dp"
+            android:text="应付金额是24000元"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:text="在线支付" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLine" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="@drawable/selector_pay_choice"
+        android:gravity="center_vertical"
+        android:paddingLeft="11dp"
+        android:paddingRight="10dp"
+        android:text="微信支付" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLine" />
+
+    <TextView
+        android:id="@+id/tvWxPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+
+        android:background="@drawable/selector_myproxy_upgrade"
+        android:gravity="center"
+        android:text="去支付"
+        android:textColor="#fff" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="16dp"
+        android:text="您可以选择微信直接支付，如果由于金额过大而导致支付受限，\n您可以选择线下支付。"
+        android:textColor="@color/gray" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLine"
+        android:layout_marginTop="15dp"/>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="11dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:text="线下支付：\n\n请将代理费用支付至：\n公司名称：深圳市人人秀网络科技有限公司\n专用账户：中国银行深圳天安支行\n账  号：767966906084\n\n付款后，请联系微信james-1999或者电话13728775102\n以便及时开通您的代理账号。" />
+
+    <TextView
+        android:id="@+id/tvMoneyPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/selector_myproxy_upgrade"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="我要线下支付"
+        android:textColor="#fff" />
+</LinearLayout>

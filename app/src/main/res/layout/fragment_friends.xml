@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center|top"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/ivContactsPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/iv_contactsposition"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+
+            android:textColor="@color/gray_white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="人脉"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </LinearLayout>
+<base.view.refresh.SmartRefreshLayout
+    android:id="@+id/str_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:enablePullDown="true"
+    app:enablePullUp="true">
+    <android.support.v7.widget.RecyclerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/lvContacts"
+        android:background="#fff"
+        android:name="com.nevermore.muzhitui.fragment.MyWorksFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/red_index"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".fragment.MyWorksWorksFragment"
+        tools:listitem="@layout/item_lv_myfriend" />
+</base.view.refresh.SmartRefreshLayout>
+</LinearLayout>

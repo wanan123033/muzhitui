@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:background="@drawable/bg_mw"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivHead"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_qq" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="点击头像设置名片"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:id="@+id/tvReadSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Whi"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <base.view.MyTabLayout
+            android:id="@+id/tbl"
+            style="@style/MyCustomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="43dp" />
+
+        <base.view.MyViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2.7dp"></base.view.MyViewPager>
+    </LinearLayout>

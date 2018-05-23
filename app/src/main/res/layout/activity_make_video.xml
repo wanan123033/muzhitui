@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.nevermore.muzhitui.AdMakeActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp">
+
+        <ImageView
+            android:id="@+id/ivChoicedImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_addchoiceimg" />
+
+        <com.github.lzyzsd.jsbridge.BridgeWebView
+            android:id="@+id/bwv"
+            android:layout_width="match_parent"
+            android:layout_height="41.3dp"
+            android:layout_gravity="bottom"
+            android:layerType="software"></com.github.lzyzsd.jsbridge.BridgeWebView>
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/flytHref"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="链接地址" />
+
+        <EditText
+            android:id="@+id/etTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:background="@null"
+            android:textSize="10sp"
+            android:hint="请去视频网站 例如腾讯视频，优酷视频等，复制连接地址粘贴此处" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlytText"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_marginTop="6dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="添加文字" />
+
+        <EditText
+            android:id="@+id/etText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="33dp"
+            android:background="@null"
+            android:gravity="left|top"
+            android:textSize="10sp"
+            android:hint="您可以在这里添加视频图片上的文字"
+            android:inputType="textMultiLine" />
+
+        <ImageView
+            android:id="@+id/ivConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_mw_confirm" />
+
+        <TextView
+            android:id="@+id/tvWordNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="14dp"
+            android:text="字数 0/25"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/selector_ad_confirm"
+        android:gravity="center"
+        android:text="完成提交" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv_topic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="11dp"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_alignTop="@id/iv_topic"
+        android:layout_toRightOf="@id/iv_topic"
+        android:textSize="13sp"
+        android:maxLines="1"
+        android:text="名称"/>
+
+    <TextView
+        android:id="@+id/tv_weizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="6dp"
+        android:maxLines="1"
+        android:textSize="11sp"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/gray"
+        android:text="广东 深圳" />
+
+    <TextView
+        android:id="@+id/tv_renshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_weizhi"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/tv_weizhi"
+        android:textColor="@color/gray"
+        android:maxLines="1"
+        android:textSize="11sp"
+        android:text="人数：200人"/>
+
+    <TextView
+        android:id="@+id/tv_baojia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/tv_name"
+        android:text="保价：￥300"
+        android:textSize="11sp"
+        android:textColor="#D9A569" />
+    <TextView
+        android:id="@+id/tv_readNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_renshu"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        android:text="300阅读" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@id/iv_topic"
+        android:layout_alignParentBottom="true"
+        android:background="#EDEDF1"/>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E8E8E8"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="这一刻你的想法..."
+        android:gravity="top"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="15sp"
+        android:inputType="textMultiLine"
+        android:background="@null"
+        android:textColor="#A8A8A8"
+        />
+    <base.view.MyGridView
+        android:id="@+id/grid_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/red_index"
+        android:layout_margin="10dp"
+        android:dividerHeight="0px"
+        android:numColumns="4"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:scrollbars="none" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:text="\n\n发布动态说明：\n"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:text="1、您所发布的内容必须符合拇指推平台合规合法性要求；\n2、不得发布美观性差、低像素、或者手机拷屏等图片和内容；\n3、不得发布图片注释、多个二维码等美观度不高的图片；\n\n如果违反上述要求，您的发布内容将会被平台做删除处理，多次违反将会被禁止使用动态发布的功能，请严格遵守。"/>
+</LinearLayout>
+    <base.view.DragView
+        android:id="@+id/dragview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#00000000"/>
+</RelativeLayout>

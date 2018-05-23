@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_ppw_buy"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivDashInfoClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_mw_cloase" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="提现申请已提交"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tvDashInfoMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:text="提现金额"
+
+            android:textColor="#fff"
+            android:textSize="10dp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:text="提现申请已提交，我们的客服将会在24小时之内审核"
+            android:textColor="@color/green"
+            android:textSize="10dp"
+
+            /> <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:text="并将提现金额返回到您的微信账户，请注意查收"
+        android:textColor="@color/green"
+        android:textSize="10dp"
+
+        />
+    </LinearLayout>
+
+</FrameLayout>

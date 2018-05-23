@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/slyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    app:clickToClose="true">
+    <LinearLayout
+        android:id="@+id/llytOpt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:tag="Bottom4">
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/ic_mw_delete"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:text="删除"
+            android:textColor="#fff" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_topic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/login_muzhitui"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/tv_msgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/iv_topic"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="15sp"
+        android:text="消息标题"/>
+    <TextView
+        android:id="@+id/tv_msgContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_msgTitle"
+        android:layout_alignLeft="@id/tv_msgTitle"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="7dp"
+        android:textSize="14sp"
+        android:text="消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_msgTitle"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:text="日期" />
+    <base.view.RoundImageView
+        android:id="@+id/iv_imgContent"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/tv_msgContent"
+        android:scaleType="fitXY"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/tv_msgTitle"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignLeft="@id/iv_topic"
+        android:layout_alignRight="@id/tv_date"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/iv_imgContent"/>
+</RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

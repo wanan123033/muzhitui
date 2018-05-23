@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=""/>
+    <title>我的二维码</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222222;
+        }
+
+        div {
+            background-image: url(../img/bg_mw.png);
+            background-repeat: no-repeat;
+            width: 100%;
+            background-size: 100% 100%;
+        }
+
+        .head {
+            width: 1.9rem;
+            height: 1.9rem;
+            display: block;
+            padding-top: 0.42rem;
+            margin: 0 auto;
+        }
+
+        .qr {
+            width: 3.93rem;
+            height: 3.93rem;
+            display: block;
+            margin: 0.42rem auto;
+
+        }
+
+        .lbName {
+            display: block;
+            font-size: 0.42rem;
+            margin: 0.42rem auto;
+            text-align: center;
+            color: white;
+        }
+
+        .lb1 {
+            display: block;
+            top: 2rem;
+            font-size: 0.42rem;
+            text-align: center;
+            color: #c1c1c1;
+        }
+
+        .lb2 {
+            display: block;
+            top: 3rem;
+            font-size: 0.42rem;
+            text-align: center;
+            color: #c1c1c1;
+        }
+
+        .lb3 {
+            display: block;
+            top: 3rem;
+            font-size: 0.42rem;
+            text-align: center;
+            color: #c1c1c1;
+        }
+
+        .imgDonwnload {
+            width: 3.37rem;
+            height: 0.89rem;
+            display: block;
+            margin: 0.42rem auto;
+        }
+
+        .aIsWhat {
+            background-color: #222222;
+            display: block;
+            color: white;
+            text-align: center;
+            height: 1.13rem;
+            font-size: 0.42rem;
+            line-height: 1.13rem;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 6.57rem;
+
+        }
+    </style>
+</head>
+<body>
+<script>
+    var scale = 1 / window.devicePixelRatio;
+    document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width,initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 10.8 + 'px';
+</script>
+<div>
+    <img class="head" src="../img/ic_myqr_head.png">
+    <label class="lbName">Sherlock（ID:102052）</label>
+    <img class="qr" src="../img/ic_qr.png">
+    <label class="lb1">长按扫描二维码</label>
+    <label class="lb2">关注拇指推公共号应用</label>
+    <img class="imgDonwnload" src="../img/ic_my_qr_download.png">
+    <a class="aIsWhat" href="https://www.baidu.com/">拇指推是什么？为什么要分享给好友?</a>
+</div>
+<iframe frameborder="0"
+        src="http://v.qq.com/iframe/player.html?vid=j0192p3ckpe&tiny=0&auto=0"></iframe>
+</body>
+</html>

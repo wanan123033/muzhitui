@@ -1,0 +1,1 @@
+include ':app', ':cptr', ':galleryfinal', ':library', ':pickerview', ':WheelPicker', ':citylist', ':libqrcode', ':IMLib', ':IMKit', ':ShortcutBadger', ':citypickerview'
